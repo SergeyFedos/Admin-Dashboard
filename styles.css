@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", serif;
 }
 
 body {
@@ -17,17 +18,127 @@ body {
 .sidebar {
   background-color: rgb(43, 131, 226);
   grid-row: 1 / 6;
+
+  display: flex;
+  font-size: 1.4rem;
+  color: white;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+
+}
+
+.sidebar ul {
+  display: grid;
+  list-style: none;
+  gap: 1rem;
+  justify-content: start
 }
 
 .header {
   display: grid;
   grid-column: 2 /span 3;
   background-color: white;
+  grid-template-columns: 2fr 1fr;
 }
 
 .main-content {
-  background-color: bisque;
+
   grid-row: 2 / 6;
   grid-column: 2 / span 3;
   background-color: rgb(221, 221, 222);
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dashboard {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.dashboard svg,
+.bell svg {
+  width: 35px;
+  height: 35px;
+}
+
+.search {
+  display: flex;
+  gap: 1.5rem;
+
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgb(221, 221, 222);
+  border: none;
+  outline: none;
+
+}
+
+.header-col1 {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header-col1 svg {
+  width: 35px;
+  height: 35px;
+}
+
+.morgan {
+  display: flex;
+  align-items: end;
+  gap: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.morgan svg {
+  width: 50px;
+  height: 50px;
+}
+
+.header-col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bell {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.3rem;
+
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 2rem;
+  background-color: rgb(43, 131, 226);
+  color: white;
+  border-radius: 25px;
 }
