@@ -25,7 +25,10 @@ body {
   flex-direction: column;
   gap: 3rem;
   padding-left: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+
+
 
 }
 
@@ -41,6 +44,7 @@ body {
   grid-column: 2 /span 3;
   background-color: white;
   grid-template-columns: 2fr 1fr;
+  padding: 1rem 1rem;
 }
 
 .main-content {
@@ -93,6 +97,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 3rem;
 }
 
 .header-col1 svg {
@@ -118,6 +123,7 @@ input {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 3rem;
 }
 
 .bell {
@@ -141,4 +147,62 @@ a {
   background-color: rgb(43, 131, 226);
   color: white;
   border-radius: 25px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  overflow: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.project {
+  height: 13rem;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  border-left: 8px solid orange;
+
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.project p::first-line {
+  font-weight: 700;
+
+}
+
+.main-col2 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around
+}
+
+.cont,
+.cont2 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 8px;
+
+  width: 80%;
 }
